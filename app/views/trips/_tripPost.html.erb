@@ -1,0 +1,63 @@
+<% @trips.each do |trip| %>
+	<!-- Posted Itineraries -->
+	<div class="container-fluid itinerary-posts">
+		<!-- Header -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-text"><span class="glyphicon glyphicon-user"></span>Inigo Pimentel posted this Itinerary</div>
+				<div class="section-text-small"><%= time_ago_in_words(trip.created_at) %> ago</div>
+			</div>
+		</div>
+		<!-- Title -->
+		<div class="spacer"></div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="section-title"><%= trip.destination %></div>
+				<div class="row">
+					<div class="section-text-small col-md-2">
+						<p>5 days</p>
+					</div>
+					<div class="section-text-small col-md-2 visible-lg">
+						<p>Stars</p>
+					</div>
+					<div class="section-text-small col-md-2 visible-lg">
+						<p>10 reviews</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="section-title text-right visible-lg">$99</div>
+			</div>
+		</div>
+		<!-- Images -->
+		<div class="row">
+			<!-- Large Image -->
+			<div class="col-md-8" style="padding-right: 0px">
+				<img class='img-responsive' src='http://lorempixel.com/output/nature-q-c-800-410-5.jpg'>
+			</div>
+			<!-- Smaller Images -->
+			<div class="col-md-4 visible-lg" style="padding-left: 0px">
+				<img class='img-responsive' src='http://lorempixel.com/output/nature-q-c-400-200-4.jpg'>
+				<div class="spacer"></div>
+				<img class='img-responsive' src='http://lorempixel.com/output/city-q-c-400-200-7.jpg'>
+			</div>
+		</div>
+		<!-- Itinerary Likes -->
+		<div class="spacer"></div>
+		<div class="row itinerary-posts-likes">
+			<div class="section-text"><span class="glyphicon glyphicon-thumbs-up"></span> Apollo Raymundo, Carl Marcos</div>
+		</div>
+		<!-- Itinerary Comments -->
+		<div class="spacer"></div>
+		<div class="row itinerary-posts-comments visible-lg">
+			<div class="col-md-3">
+				<div class="section-title"><span class="glyphicon glyphicon-user"></span> Apollo Raymundo</div>
+			</div>
+			<div class="col-md-8">
+				<div class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus repudiandae numquam provident quibusdam quo, iusto autem sed?</div>
+			</div>
+		</div>
+		<div class="spacer"></div>
+		<div class="spacer"></div>
+	</div> <!-- /.itinerary-posts -->
+	<% end %>

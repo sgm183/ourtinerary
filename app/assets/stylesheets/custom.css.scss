@@ -1,0 +1,72 @@
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+	background: #EBEBEB;
+}
+#content-wrapper {
+	margin-top: 20px;
+}
+.side-column-color {
+	background: #DCDBE0;
+	padding: 20px 10px 20px 10px;
+}
+.side-column-clear {
+	margin-top: 10px;
+	padding: 20px 10px 20px 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #EBEBEB;
+	background: #FFFFFF;
+}
+.section-title {
+	font-size: 17px;
+}
+.section-text {
+	font-size: 13px;
+}
+.section-text-small {
+	font-size: 10px;
+}
+
+.itinerary-posts {
+	margin-top: 10px;
+	padding: 20px;
+	background: white;
+}
+
+#middle-column-wrapper {
+	background: #FFFFF;
+}
+
+#search-trips {
+	background: #DCDBE0;
+	padding: 20px 20px 20px 20px
+}
+#search-trips-destination {
+	width: 50%;
+	margin-left: 10px
+}
+#search-trips-cost {
+	width: 20%
+}
+#search-trips-duration {
+	width: 20%
+}
+
+.itinerary-posts-likes {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #EBEBEB;
+	padding: 10px;
+}
+
+.spacer {
+	margin-top: 10px;
+}
+.line {
+	border-top-style: solid;
+	border-top-width: 3px;
+	border-top-color: #EBEBEB;
+}
